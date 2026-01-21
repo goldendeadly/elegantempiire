@@ -1,0 +1,4 @@
+server/
+.manus-logs/
+node_modules/
+.git/
