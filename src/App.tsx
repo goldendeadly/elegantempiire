@@ -9,7 +9,9 @@ import ComparisonPage from "./pages/ComparisonPage";
 import HubPage from "./pages/HubPage";
 import React, { Suspense, useState } from 'react';
 
-// --- MEGA MENU COMPONENT (Embedded directly to fix build) ---
+// --- EMBEDDED MEGAMENU COMPONENT ---
+// This is embedded directly to avoid "split brain" import issues between /src and /client/src
+
 type MenuItem = {
   label: string;
   href: string;
@@ -213,7 +215,7 @@ function MegaMenu() {
   );
 }
 
-// --- ROUTING LOGIC ---
+// --- END EMBEDDED MEGAMENU ---
 
 // 1. Find all the pages in the folder
 const pages = import.meta.glob('./pages/**/*.tsx');
@@ -285,7 +287,3 @@ function App() {
 }
 
 export default App;
-
-export default App;
-
-
