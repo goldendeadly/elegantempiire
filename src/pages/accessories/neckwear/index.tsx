@@ -1,0 +1,75 @@
+import React from 'react';
+import Layout from '@/components/Layout';
+import { Link } from 'wouter';
+
+export default function AccessoriesNeckwear() {
+  return (
+    <Layout>
+      <main className="max-w-[1800px] mx-auto px-6 py-24">
+        <header className="mb-24 max-w-4xl">
+          <span className="text-xs uppercase tracking-widest text-[#999] mb-4 block">Accessories</span>
+          <h1 className="text-6xl md:text-8xl font-light tracking-tighter mb-8 text-[#1A1A1A]">
+            Neckwear
+          </h1>
+          <p className="text-xl md:text-2xl text-[#666] font-light leading-relaxed max-w-2xl">
+            The finishing touches that define a gentleman. From silk ties to pocket squares, curated for the discerning man.
+          </p>
+        </header>
+
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#E5E5E0] border border-[#E5E5E0]">
+          <div className="bg-[#F5F5F0] p-12 min-h-[400px] flex flex-col justify-between group hover:bg-[#F0F0EB] transition-colors">
+            <span className="text-xs uppercase tracking-widest text-[#999]">01 — Featured</span>
+            <h3 className="text-3xl font-light mt-4 mb-8">The Edit</h3>
+            <div className="w-full h-px bg-[#E5E5E0] group-hover:bg-[#D5D5D0] transition-colors" />
+          </div>
+          <div className="bg-[#F5F5F0] p-12 min-h-[400px] flex flex-col justify-between group hover:bg-[#F0F0EB] transition-colors">
+            <span className="text-xs uppercase tracking-widest text-[#999]">02 — Reviews</span>
+            <h3 className="text-3xl font-light mt-4 mb-8">Top Rated</h3>
+            <div className="w-full h-px bg-[#E5E5E0] group-hover:bg-[#D5D5D0] transition-colors" />
+          </div>
+          <div className="bg-[#F5F5F0] p-12 min-h-[400px] flex flex-col justify-between group hover:bg-[#F0F0EB] transition-colors">
+            <span className="text-xs uppercase tracking-widest text-[#999]">03 — Guide</span>
+            <h3 className="text-3xl font-light mt-4 mb-8">Buying Guide</h3>
+            <div className="w-full h-px bg-[#E5E5E0] group-hover:bg-[#D5D5D0] transition-colors" />
+          </div>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-3xl font-light mb-8 text-[#1A1A1A]">Explore Neckwear</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#E5E5E0] border border-[#E5E5E0]">
+          <Link href="/accessories/neckwear/ties" className="bg-[#F5F5F0] p-12 min-h-[300px] flex flex-col justify-between group hover:bg-[#F0F0EB] transition-colors">
+            <span className="text-xs uppercase tracking-widest text-[#999]">01 — Explore</span>
+            <h3 className="text-2xl font-light mt-4 mb-8">Ties</h3>
+            <div className="w-full h-px bg-[#E5E5E0] group-hover:bg-[#D5D5D0] transition-colors" />
+          </Link>
+          <Link href="/accessories/neckwear/bow-ties" className="bg-[#F5F5F0] p-12 min-h-[300px] flex flex-col justify-between group hover:bg-[#F0F0EB] transition-colors">
+            <span className="text-xs uppercase tracking-widest text-[#999]">02 — Explore</span>
+            <h3 className="text-2xl font-light mt-4 mb-8">Bow Ties</h3>
+            <div className="w-full h-px bg-[#E5E5E0] group-hover:bg-[#D5D5D0] transition-colors" />
+          </Link>
+          <Link href="/accessories/neckwear/pocket-squares" className="bg-[#F5F5F0] p-12 min-h-[300px] flex flex-col justify-between group hover:bg-[#F0F0EB] transition-colors">
+            <span className="text-xs uppercase tracking-widest text-[#999]">03 — Explore</span>
+            <h3 className="text-2xl font-light mt-4 mb-8">Pocket Squares</h3>
+            <div className="w-full h-px bg-[#E5E5E0] group-hover:bg-[#D5D5D0] transition-colors" />
+          </Link>
+          <Link href="/accessories/neckwear/scarves" className="bg-[#F5F5F0] p-12 min-h-[300px] flex flex-col justify-between group hover:bg-[#F0F0EB] transition-colors">
+            <span className="text-xs uppercase tracking-widest text-[#999]">04 — Explore</span>
+            <h3 className="text-2xl font-light mt-4 mb-8">Scarves</h3>
+            <div className="w-full h-px bg-[#E5E5E0] group-hover:bg-[#D5D5D0] transition-colors" />
+          </Link>
+          <Link href="/accessories/neckwear/cravats" className="bg-[#F5F5F0] p-12 min-h-[300px] flex flex-col justify-between group hover:bg-[#F0F0EB] transition-colors">
+            <span className="text-xs uppercase tracking-widest text-[#999]">05 — Explore</span>
+            <h3 className="text-2xl font-light mt-4 mb-8">Cravats & Ascots</h3>
+            <div className="w-full h-px bg-[#E5E5E0] group-hover:bg-[#D5D5D0] transition-colors" />
+          </Link>
+          <Link href="/accessories/neckwear/tie-accessories" className="bg-[#F5F5F0] p-12 min-h-[300px] flex flex-col justify-between group hover:bg-[#F0F0EB] transition-colors">
+            <span className="text-xs uppercase tracking-widest text-[#999]">06 — Explore</span>
+            <h3 className="text-2xl font-light mt-4 mb-8">Tie Bars & Clips</h3>
+            <div className="w-full h-px bg-[#E5E5E0] group-hover:bg-[#D5D5D0] transition-colors" />
+          </Link>
+          </div>
+        </section>
+      </main>
+    </Layout>
+  );
+}
