@@ -2,6 +2,7 @@ import { useRoute, Link } from 'wouter';
 import { getArticleBySlug } from '@/lib/markdown';
 import Layout from '@/components/Layout';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { ArrowLeft } from 'lucide-react';
 
 export default function ArticlePage() {
@@ -70,6 +71,7 @@ export default function ArticlePage() {
 
         <div className="prose prose-lg max-w-none">
           <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
             components={{
               h2: ({ children }) => (
                 <h2 className="text-3xl font-light mt-12 mb-4 text-[#1A1A1A]">
