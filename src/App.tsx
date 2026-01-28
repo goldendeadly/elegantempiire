@@ -283,6 +283,7 @@ const menuStructure: MenuItem[] = [
         children: [
           { label: 'Sunglasses', href: '/accessories/eyewear/sunglasses' },
           { label: 'Optical', href: '/accessories/eyewear/optical' },
+          { label: 'Prescription Glasses', href: '/accessories/eyewear/prescription-glasses' },
         ]
       },
       {
