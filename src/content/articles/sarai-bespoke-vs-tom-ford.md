@@ -1,7 +1,7 @@
 ---
 title: "Sarai Bespoke vs. Tom Ford: The Suit, The Symbol, and The Soul of True Luxury"
 description: "A deep comparison between Tom Ford's iconic ready-to-wear suits and Sarai Bespoke's artisanal bespoke tailoring. Discover which philosophy of luxury suits you."
-date: "2026-01-28"
+publishDate: "2026-01-28"
 author: "YC Sigra"
 tags:
   - "Suiting"

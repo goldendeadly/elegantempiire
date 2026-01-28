@@ -262,12 +262,12 @@ export default function Home() {
         <div className="container mx-auto relative z-10">
           <div className="max-w-2xl">
             <span className="font-mono text-xs uppercase tracking-widest text-white/60 mb-4 block">Featured Editorial</span>
-            <h2 className="font-serif text-5xl md:text-7xl mb-6 leading-[0.9]">The Row <span className="font-sans font-thin italic">&</span> Lemaire</h2>
+            <h2 className="font-serif text-5xl md:text-7xl mb-6 leading-[0.9]">Sarai Bespoke <span className="font-sans font-thin italic">vs.</span> Tom Ford</h2>
             <p className="font-sans text-xl font-light text-white/80 mb-10 leading-relaxed">
-              A study in winter silence. We dissect the two reigning philosophies of quiet luxury to help you find your uniform.
+              The suit, the symbol, and the soul of true luxury. We explore two fundamentally different philosophies of bespoke tailoring.
             </p>
             <Button variant="outline" className="rounded-none border-white text-white hover:bg-white hover:text-black h-14 px-8 text-xs uppercase tracking-widest" asChild>
-              <Link href="/brands/spotlight/the-row">Read the Analysis</Link>
+              <Link href="/articles/sarai-bespoke-vs-tom-ford">Read the Analysis</Link>
             </Button>
           </div>
         </div>
