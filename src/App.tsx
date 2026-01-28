@@ -8,6 +8,8 @@ import ComparisonPage from "./pages/ComparisonPage";
 import HubPage from "./pages/HubPage";
 import ArticlePage from "./pages/ArticlePage";
 import React, { Suspense, useState } from 'react';
+import { Menu, X, ChevronDown } from 'lucide-react';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
 // --- EMBEDDED MEGAMENU COMPONENT ---
 // This is embedded directly to avoid "split brain" import issues between /src and /client/src
@@ -592,6 +594,75 @@ function MegaMenu() {
 
 // --- END EMBEDDED MEGAMENU ---
 
+// --- MOBILE MENU COMPONENT ---
+function MobileMenu() {
+  const [open, setOpen] = useState(false);
+  const [expandedItems, setExpandedItems] = useState<string[]>([]);
+
+  const toggleExpanded = (label: string) => {
+    setExpandedItems(prev => 
+      prev.includes(label) 
+        ? prev.filter(item => item !== label)
+        : [...prev, label]
+    );
+  };
+
+  return (
+    <Sheet open={open} onOpenChange={setOpen}>
+      <SheetTrigger asChild>
+        <button className="md:hidden p-2 hover:opacity-70 transition-opacity" aria-label="Open menu">
+          <Menu className="w-6 h-6" />
+        </button>
+      </SheetTrigger>
+      <SheetContent side="right" className="w-[300px] bg-[#F5F5F0] overflow-y-auto">
+        <SheetHeader>
+          <SheetTitle className="text-left text-lg font-medium tracking-tight">Menu</SheetTitle>
+        </SheetHeader>
+        <nav className="flex flex-col gap-2 mt-4">
+          {menuStructure.map((item) => (
+            <div key={item.label} className="border-b border-[#E5E5E0] pb-2">
+              <div className="flex items-center justify-between">
+                <Link 
+                  href={item.href} 
+                  onClick={() => setOpen(false)}
+                  className="text-sm uppercase tracking-widest text-[#1A1A1A] py-2"
+                >
+                  {item.label}
+                </Link>
+                {item.children && (
+                  <button 
+                    onClick={() => toggleExpanded(item.label)}
+                    className="p-2 hover:opacity-70"
+                  >
+                    <ChevronDown 
+                      className={`w-4 h-4 transition-transform ${expandedItems.includes(item.label) ? 'rotate-180' : ''}`} 
+                    />
+                  </button>
+                )}
+              </div>
+              {item.children && expandedItems.includes(item.label) && (
+                <div className="pl-4 flex flex-col gap-1 mt-1">
+                  {item.children.map((subItem) => (
+                    <Link 
+                      key={subItem.label}
+                      href={subItem.href}
+                      onClick={() => setOpen(false)}
+                      className="text-xs text-[#666] hover:text-[#1A1A1A] py-1"
+                    >
+                      {subItem.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </nav>
+      </SheetContent>
+    </Sheet>
+  );
+}
+// --- END MOBILE MENU ---
+
 // 1. Find all the pages in the folder
 const pages = import.meta.glob("./pages/**/*.tsx", { eager: true });
 
@@ -630,15 +701,16 @@ function App() {
         <TooltipProvider>
           <div className="min-h-screen bg-[#F5F5F0]">
             <nav className="sticky top-0 z-50 bg-[#F5F5F0]/90 backdrop-blur-md border-b border-[#E5E5E0]">
-              <div className="max-w-[1800px] mx-auto px-6 h-16 flex items-center justify-between">
-                <Link href="/" className="text-xl font-medium tracking-tight hover:opacity-70 transition-opacity mr-12 whitespace-nowrap">
+              <div className="max-w-[1800px] mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+                <Link href="/" className="text-xl font-medium tracking-tight hover:opacity-70 transition-opacity whitespace-nowrap">
                   ELEGANT EMPIIRE
                 </Link>
                 <MegaMenu />
-                <div className="flex items-center gap-4 ml-auto">
+                <div className="flex items-center gap-4">
                     <Link href="/wardrobe" className="hidden md:block px-4 py-2 text-xs font-medium uppercase tracking-widest border border-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white transition-colors">
                         Wardrobe OS
                     </Link>
+                    <MobileMenu />
                 </div>
               </div>
             </nav>
