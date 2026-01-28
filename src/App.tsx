@@ -321,7 +321,7 @@ const menuStructure: MenuItem[] = [
         label: 'Hats',
         href: '/accessories/hats',
         children: [
-          { label: 'Fedoras', href: '/accessories/hats/fedoras' },
+          { label: 'Dress Hats', href: '/accessories/hats/dress hats' },
           { label: 'Beanies', href: '/accessories/hats/beanies' },
           { label: 'Caps', href: '/accessories/hats/caps' },
         ]
@@ -331,7 +331,9 @@ const menuStructure: MenuItem[] = [
         href: '/accessories/scarves-gloves',
         children: [
           { label: 'Cashmere Scarves', href: '/accessories/scarves-gloves/cashmere-scarves' },
+          { label: 'Wool & Winter Scarves', href: '/accessories/scarves-gloves/wool & winter scarves' },
           { label: 'Leather Gloves', href: '/accessories/scarves-gloves/leather-gloves' },
+          { label: 'Lined & Cashmere Gloves', href: '/accessories/scarves-gloves/lined & cashmere gloves' },
         ]
       },
     ]
