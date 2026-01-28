@@ -2,7 +2,7 @@
 title: "The 2026 Guide to Investment-Grade Cashmere: A Definitive Review"
 description: "An in-depth analysis of the world’s finest cashmere, from sourcing and ply to the top 7 brands worth investing in. Discover the difference between luxury and true investment-grade quality."
 publishDate: "2026-01-28"
-author: "Julian Ashford"
+author: "YC Sigra"
 tags:
   - "Cashmere"
   - "Investment Guide"
