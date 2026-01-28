@@ -172,6 +172,17 @@ const menuStructure: MenuItem[] = [
     label: 'Fragrance',
     href: '/fragrance',
     children: [
+       {
+        label: 'Guides & Frameworks',
+        href: '/fragrance/guides',
+        children: [
+          { label: 'How to Choose a Signature Scente', href: '/fragrance/guides/how-to-choose-a-signature-scent' },
+          { label: 'Niche vs Designer Fragrance', href: '/fragrance/guides/niche-vs-designer-fragrance' },
+          { label: 'Investment Fragrances', href: '/fragrance/guides/investment-fragrances' },
+          { label: 'Fragrance for Travel, Office, Evening', href: '/fragrance/guides/fragrance-for-travel-office-evening' },
+          { label: 'Investment Fragrances', href: '/fragrance/guides/investment-fragrances' },
+        ]
+      },
       {
         label: 'Niche Fragrance',
         href: '/fragrance/niche',
@@ -179,6 +190,7 @@ const menuStructure: MenuItem[] = [
           { label: 'Amouage', href: '/fragrance/niche/amouage' },
           { label: 'Roja', href: '/fragrance/niche/roja' },
           { label: 'MFK', href: '/fragrance/niche/mfk' },
+          { label: 'Xerjoff', href: '/fragrance/niche/xerjoff' },
         ]
       },
       {
@@ -190,23 +202,33 @@ const menuStructure: MenuItem[] = [
           { label: 'Dior', href: '/fragrance/designer/dior' },
         ]
       },
+       {
+        label: 'Brand Spotlights',
+        href: '/fragrance/spotlight',
+        children: [
+          { label: 'Creed', href: '/fragrance/spotlight/creed' },
+          { label: 'Maison Francis Kurkdjian', href: '/fragrance/spotlight/maison-francis-kurkdjian' },
+          { label: 'Roja', href: '/fragrance/spotlight/roja' },
+        ]
+      },
       {
         label: 'Fragrance Notes & Education',
         href: '/fragrance/education',
         children: [
           { label: 'Fragrance Families', href: '/fragrance/education/families' },
           { label: 'Note Breakdowns', href: '/fragrance/education/notes' },
-          { label: 'Seasonality', href: '/fragrance/education/seasonality' },
+          { label: 'Seasonality & Climate', href: '/fragrance/education/seasonality-climate' },
+          { label: 'Concentration Types', href: '/fragrance/education/concentration-types' },
         ]
       },
       {
-        label: 'Brand Spotlights',
-        href: '/fragrance/brands',
+        label: 'Comparisons',
+        href: '/fragrance/comparisons',
         children: [
-          { label: 'Creed', href: '/fragrance/brands/creed' },
-          { label: 'MFK', href: '/fragrance/brands/mfk' },
-          { label: 'Amouage', href: '/fragrance/brands/amouage' },
-          { label: 'Roja', href: '/fragrance/brands/roja' },
+          { label: 'Brand vs Brand', href: '/fragrance/comparisons/brand-vs-brand' },
+          { label: 'Scent vs Scent', href: '/fragrance/comparisons/scent-vs-scent' },
+          { label: 'Niche vs Designer', href: '/fragrance/comparisons/niche-vs-designer' },
+          { label: 'Roja', href: '/fragrance/comparisons/roja' },
         ]
       },
       {
@@ -221,16 +243,20 @@ const menuStructure: MenuItem[] = [
         label: 'Buying Guides',
         href: '/fragrance/guides',
         children: [
-          { label: 'Investment Fragrances', href: '/fragrance/guides/investment' },
           { label: 'Signature Scents', href: '/fragrance/guides/signature' },
+          { label: 'Investment Fragrances', href: '/fragrance/guides/investment' },
+          { label: 'Best Office Fragrances', href: '/fragrance/guides/best-office-fragrances' },
+          { label: 'Best Evening Fragrances', href: '/fragrance/guides/best-evening-fragrances' },
+          { label: 'Best Travel Fragrances', href: '/fragrance/guides/best-travel-fragrances' },
         ]
       },
       {
-        label: 'Longevity & Sillage Analysis',
-        href: '/fragrance/analysis',
+        label: 'Performance & Wear Testing',
+        href: '/fragrance/performance',
         children: [
-          { label: 'Performance Testing', href: '/fragrance/analysis/performance' },
-          { label: 'Projection Guide', href: '/fragrance/analysis/projection' },
+          { label: 'Longevity Analysis', href: '/fragrance/performance/longevity-analysis' },
+          { label: 'Sillage & Projection', href: '/fragrance/performance/projection' },
+          { label: 'Real-World Wear Testing', href: '/fragrance/performance/testing' },
         ]
       },
     ]
