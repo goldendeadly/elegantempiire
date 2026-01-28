@@ -56,7 +56,7 @@ export default function AccessoriesWatches() {
       <main className="max-w-[1800px] mx-auto px-6 py-24">
         {/* Header */}
         <header className="mb-16 max-w-4xl">
-          <span className="text-xs uppercase tracking-widest text-[#999] mb-4 block">Guide — 2026</span>
+          <span className="text-xs uppercase tracking-widest text-[#999] mb-4 block">Guide ,  2026</span>
           <h1 className="text-5xl md:text-7xl font-light tracking-tighter mb-8 text-[#1A1A1A]">
             Best Watches: The Iconic Brands Worth Owning
           </h1>
@@ -77,7 +77,7 @@ export default function AccessoriesWatches() {
               At the top of the market, the difference between a "great" watch and a <em>great decision</em> is rarely aesthetics alone. It is the marriage of finishing standards, serviceability, long-term desirability, and the brand's discipline in protecting its own legacy.
             </p>
             <p className="text-lg text-[#666] leading-relaxed mb-8">
-              This guide focuses on five maisons that define modern watch collecting: <strong>Rolex, Cartier, Audemars Piguet, Patek Philippe, and Richard Mille</strong>—with a practical lens: what to buy, why it matters, and who each brand truly serves.
+              This guide focuses on five maisons that define modern watch collecting: <strong>Rolex, Cartier, Audemars Piguet, Patek Philippe, and Richard Mille</strong>, with a practical lens: what to buy, why it matters, and who each brand truly serves.
             </p>
           </div>
         </article>
@@ -93,7 +93,7 @@ export default function AccessoriesWatches() {
           <div className="border-t border-[#E5E5E0] py-16">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div className="lg:col-span-1">
-                <span className="text-xs uppercase tracking-widest text-[#999] mb-2 block">01 — Sports / Daily</span>
+                <span className="text-xs uppercase tracking-widest text-[#999] mb-2 block">01 ,  Sports / Daily</span>
                 <h3 className="text-3xl font-light text-[#1A1A1A] mb-2">Rolex Submariner</h3>
                 <p className="text-lg text-[#666]">No-Date / Date</p>
               </div>
@@ -130,7 +130,7 @@ export default function AccessoriesWatches() {
           <div className="border-t border-[#E5E5E0] py-16">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div className="lg:col-span-1">
-                <span className="text-xs uppercase tracking-widest text-[#999] mb-2 block">02 — Dress / Design</span>
+                <span className="text-xs uppercase tracking-widest text-[#999] mb-2 block">02 ,  Dress / Design</span>
                 <h3 className="text-3xl font-light text-[#1A1A1A] mb-2">Cartier Tank</h3>
                 <p className="text-lg text-[#666]">Must / Louis / Tank Américaine</p>
               </div>
@@ -150,7 +150,7 @@ export default function AccessoriesWatches() {
                 <div>
                   <h4 className="text-sm uppercase tracking-widest text-[#999] mb-2">The experience</h4>
                   <p className="text-[#666] leading-relaxed">
-                    This is one of the most wearable expressions of luxury: thin, elegant, and visually complete. It elevates tailoring, but it also sharpens simple outfits—white shirt, dark denim, cashmere, fine leather.
+                    This is one of the most wearable expressions of luxury: thin, elegant, and visually complete. It elevates tailoring, but it also sharpens simple outfits, white shirt, dark denim, cashmere, fine leather.
                   </p>
                 </div>
                 <div>
@@ -167,7 +167,7 @@ export default function AccessoriesWatches() {
           <div className="border-t border-[#E5E5E0] py-16">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div className="lg:col-span-1">
-                <span className="text-xs uppercase tracking-widest text-[#999] mb-2 block">03 — Luxury Sports</span>
+                <span className="text-xs uppercase tracking-widest text-[#999] mb-2 block">03 ,  Luxury Sports</span>
                 <h3 className="text-3xl font-light text-[#1A1A1A] mb-2">Audemars Piguet Royal Oak</h3>
                 <p className="text-lg text-[#666]">Steel</p>
               </div>
@@ -204,7 +204,7 @@ export default function AccessoriesWatches() {
           <div className="border-t border-[#E5E5E0] py-16">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div className="lg:col-span-1">
-                <span className="text-xs uppercase tracking-widest text-[#999] mb-2 block">04 — Dress / Heritage</span>
+                <span className="text-xs uppercase tracking-widest text-[#999] mb-2 block">04 ,  Dress / Heritage</span>
                 <h3 className="text-3xl font-light text-[#1A1A1A] mb-2">Patek Philippe Calatrava</h3>
                 <p className="text-lg text-[#666]">Dress Reference</p>
               </div>
@@ -246,7 +246,7 @@ export default function AccessoriesWatches() {
           <div className="border-t border-[#E5E5E0] py-16">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div className="lg:col-span-1">
-                <span className="text-xs uppercase tracking-widest text-[#999] mb-2 block">05 — Avant-Garde</span>
+                <span className="text-xs uppercase tracking-widest text-[#999] mb-2 block">05 ,  Avant-Garde</span>
                 <h3 className="text-3xl font-light text-[#1A1A1A] mb-2">Richard Mille</h3>
                 <p className="text-lg text-[#666]">Entry-Level Reference Family</p>
               </div>
@@ -365,7 +365,7 @@ export default function AccessoriesWatches() {
               <h3 className="text-xl font-light mb-6 text-[#1A1A1A] pb-2 border-b border-[#E5E5E0]">Value Proposition</h3>
               <ul className="space-y-4">
                 <li className="text-[#666]"><strong className="text-[#1A1A1A]">Rolex:</strong> One of the strongest "buy well, wear hard, resell confidently" propositions in luxury.</li>
-                <li className="text-[#666]"><strong className="text-[#1A1A1A]">Cartier:</strong> Timeless design value, especially for a style-driven wardrobe—often with more accessible entry points.</li>
+                <li className="text-[#666]"><strong className="text-[#1A1A1A]">Cartier:</strong> Timeless design value, especially for a style-driven wardrobe, often with more accessible entry points.</li>
                 <li className="text-[#666]"><strong className="text-[#1A1A1A]">AP:</strong> Premium pricing justified when finishing and reference desirability align; volatility is higher.</li>
                 <li className="text-[#666]"><strong className="text-[#1A1A1A]">Patek:</strong> The most traditional "heirloom logic," but selection discipline matters.</li>
                 <li className="text-[#666]"><strong className="text-[#1A1A1A]">RM:</strong> High-risk/high-reward positioning; reference knowledge is non-negotiable.</li>
@@ -384,7 +384,7 @@ export default function AccessoriesWatches() {
             </div>
             <div className="bg-white p-6">
               <h4 className="text-sm uppercase tracking-widest text-[#999] mb-2">For the modernist</h4>
-              <p className="text-[#1A1A1A] font-light text-lg"><em>Audemars Piguet Royal Oak</em> — presence without chaos</p>
+              <p className="text-[#1A1A1A] font-light text-lg"><em>Audemars Piguet Royal Oak</em> ,  presence without chaos</p>
             </div>
             <div className="bg-white p-6">
               <h4 className="text-sm uppercase tracking-widest text-[#999] mb-2">For the pragmatic investor-wearer</h4>
@@ -396,7 +396,7 @@ export default function AccessoriesWatches() {
             </div>
             <div className="bg-white p-6">
               <h4 className="text-sm uppercase tracking-widest text-[#999] mb-2">For the maximalist</h4>
-              <p className="text-[#1A1A1A] font-light text-lg"><em>Richard Mille</em> — purchased with expert guidance</p>
+              <p className="text-[#1A1A1A] font-light text-lg"><em>Richard Mille</em> ,  purchased with expert guidance</p>
             </div>
           </div>
         </section>
@@ -416,7 +416,7 @@ export default function AccessoriesWatches() {
                 <li><strong>Dress watch:</strong> prioritize thickness, proportion, and visual calm</li>
                 <li><strong>Signature piece:</strong> prioritize design identity and how it aligns with your public presence</li>
               </ul>
-              <p className="text-sm text-[#999] mt-4 italic">Expert tip: If you own one luxury watch, buy for your most common day—not your most aspirational event.</p>
+              <p className="text-sm text-[#999] mt-4 italic">Expert tip: If you own one luxury watch, buy for your most common day, not your most aspirational event.</p>
             </div>
 
             <div className="border-l-4 border-[#1A1A1A] pl-8">
@@ -462,7 +462,7 @@ export default function AccessoriesWatches() {
               <li>Choose <strong>Cartier</strong> when design intelligence and proportion matter most.</li>
               <li>Choose <strong>Audemars Piguet</strong> for modern luxury finishing with unmistakable presence.</li>
               <li>Choose <strong>Patek Philippe</strong> for traditional refinement and heirloom logic.</li>
-              <li>Choose <strong>Richard Mille</strong> only when you want contemporary engineering as identity—and you have the reference knowledge to buy correctly.</li>
+              <li>Choose <strong>Richard Mille</strong> only when you want contemporary engineering as identity, and you have the reference knowledge to buy correctly.</li>
             </ul>
             <p className="text-lg text-[#666] leading-relaxed">
               Elegant Empiire's position is simple: luxury is not performance, it is <em>discernment</em>. Buy fewer pieces. Buy better. And ensure every object you wear can justify itself in craftsmanship, provenance, and long-term value.
