@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import ComparisonPage from "./pages/ComparisonPage";
 import HubPage from "./pages/HubPage";
+import ArticlePage from "./pages/ArticlePage";
 import React, { Suspense, useState } from 'react';
 
 // --- EMBEDDED MEGAMENU COMPONENT ---
@@ -242,6 +243,7 @@ function Router() {
       <Route path="/comparison/:slug" component={ComparisonPage} />
       <Route path="/hub/:category" component={HubPage} /> 
       <Route path="/comparisons" component={Home} />
+      <Route path="/articles/:slug" component={ArticlePage} />
 
       {/* Generated Routes from the File System */}
       {generatedRoutes.map(({ path, component: Component }) => (
