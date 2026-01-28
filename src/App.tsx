@@ -1,4 +1,4 @@
-import { Toaster } from "@/components/ui/sonner";
+import "./App.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Link, Route, Switch } from "wouter";
@@ -223,53 +223,68 @@ const menuStructure: MenuItem[] = [
     ]
   },
   {
-    label: 'Grooming & Fragrance',
-    href: '/grooming',
+    label: 'Fragrance',
+    href: '/fragrance',
     children: [
       {
-        label: 'Fragrance',
-        href: '/grooming/fragrance',
+        label: 'Niche Fragrance',
+        href: '/fragrance/niche',
         children: [
-          { label: 'Niche', href: '/grooming/fragrance/niche' },
-          { label: 'Designer', href: '/grooming/fragrance/designer' },
-          { label: 'Oud', href: '/grooming/fragrance/oud' },
-          { label: 'Fresh', href: '/grooming/fragrance/fresh' },
+          { label: 'Amouage', href: '/fragrance/niche/amouage' },
+          { label: 'Roja', href: '/fragrance/niche/roja' },
+          { label: 'MFK', href: '/fragrance/niche/mfk' },
         ]
       },
       {
-        label: 'Shaving',
-        href: '/grooming/shaving',
+        label: 'Designer Fragrance (Selective)',
+        href: '/fragrance/designer',
         children: [
-          { label: 'Razors', href: '/grooming/shaving/razors' },
-          { label: 'Creams', href: '/grooming/shaving/creams' },
-          { label: 'Aftershave', href: '/grooming/shaving/aftershave' },
+          { label: 'Creed', href: '/fragrance/designer/creed' },
+          { label: 'Tom Ford', href: '/fragrance/designer/tom-ford' },
+          { label: 'Dior', href: '/fragrance/designer/dior' },
         ]
       },
       {
-        label: 'Skincare',
-        href: '/grooming/skincare',
+        label: 'Fragrance Notes & Education',
+        href: '/fragrance/education',
         children: [
-          { label: 'Cleansers', href: '/grooming/skincare/cleansers' },
-          { label: 'Moisturizers', href: '/grooming/skincare/moisturizers' },
-          { label: 'Serums', href: '/grooming/skincare/serums' },
+          { label: 'Fragrance Families', href: '/fragrance/education/families' },
+          { label: 'Note Breakdowns', href: '/fragrance/education/notes' },
+          { label: 'Seasonality', href: '/fragrance/education/seasonality' },
         ]
       },
       {
-        label: 'Haircare',
-        href: '/grooming/haircare',
+        label: 'Brand Spotlights',
+        href: '/fragrance/brands',
         children: [
-          { label: 'Styling', href: '/grooming/haircare/styling' },
-          { label: 'Shampoo', href: '/grooming/haircare/shampoo' },
-          { label: 'Conditioners', href: '/grooming/haircare/conditioners' },
+          { label: 'Creed', href: '/fragrance/brands/creed' },
+          { label: 'MFK', href: '/fragrance/brands/mfk' },
+          { label: 'Amouage', href: '/fragrance/brands/amouage' },
+          { label: 'Roja', href: '/fragrance/brands/roja' },
         ]
       },
       {
-        label: 'Body',
-        href: '/grooming/body',
+        label: 'Comparisons',
+        href: '/fragrance/comparisons',
         children: [
-          { label: 'Soaps', href: '/grooming/body/soaps' },
-          { label: 'Lotions', href: '/grooming/body/lotions' },
-          { label: 'Deodorant', href: '/grooming/body/deodorant' },
+          { label: 'Brand vs Brand', href: '/fragrance/comparisons/brand-vs-brand' },
+          { label: 'Scent vs Scent', href: '/fragrance/comparisons/scent-vs-scent' },
+        ]
+      },
+      {
+        label: 'Buying Guides',
+        href: '/fragrance/guides',
+        children: [
+          { label: 'Investment Fragrances', href: '/fragrance/guides/investment' },
+          { label: 'Signature Scents', href: '/fragrance/guides/signature' },
+        ]
+      },
+      {
+        label: 'Longevity & Sillage Analysis',
+        href: '/fragrance/analysis',
+        children: [
+          { label: 'Performance Testing', href: '/fragrance/analysis/performance' },
+          { label: 'Projection Guide', href: '/fragrance/analysis/projection' },
         ]
       },
     ]
@@ -278,6 +293,17 @@ const menuStructure: MenuItem[] = [
     label: 'Lifestyle',
     href: '/lifestyle',
     children: [
+      {
+        label: 'Personal Care & Ritual',
+        href: '/lifestyle/personal-care',
+        children: [
+          { label: 'Shaving', href: '/lifestyle/personal-care/shaving' },
+          { label: 'Skincare', href: '/lifestyle/personal-care/skincare' },
+          { label: 'Haircare', href: '/lifestyle/personal-care/haircare' },
+          { label: 'Body', href: '/lifestyle/personal-care/body' },
+          { label: 'Tools & Devices', href: '/lifestyle/personal-care/tools-devices' },
+        ]
+      },
       {
         label: 'Home',
         href: '/lifestyle/home',
@@ -444,53 +470,58 @@ function MegaMenu() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
 
   return (
-    <nav className="hidden md:flex items-center space-x-8 h-full" onMouseLeave={() => setActiveMenu(null)}>
-      {menuStructure.map((item) => (
-        <div 
-          key={item.label} 
-          className="relative h-full flex items-center"
-          onMouseEnter={() => setActiveMenu(item.label)}
-        >
-          <Link 
-            href={item.href}
-            className={`text-sm uppercase tracking-widest transition-colors duration-200 ${
-              activeMenu === item.label ? 'text-[#1A1A1A]' : 'text-[#666] hover:text-[#1A1A1A]'
-            }`}
+    <nav className="hidden md:flex items-center space-x-4 h-full" onMouseLeave={() => setActiveMenu(null)}>
+      {menuStructure.map((item, index) => {
+        // Determine if this is one of the last two items that need left-aligned dropdown
+        const isLastTwo = index >= menuStructure.length - 2;
+        
+        return (
+          <div 
+            key={item.label} 
+            className="relative h-full flex items-center"
+            onMouseEnter={() => setActiveMenu(item.label)}
           >
-            {item.label}
-          </Link>
+            <Link 
+              href={item.href}
+              className={`text-sm uppercase tracking-widest transition-colors duration-200 whitespace-nowrap ${
+                activeMenu === item.label ? 'text-[#1A1A1A]' : 'text-[#666] hover:text-[#1A1A1A]'
+              }`}
+            >
+              {item.label}
+            </Link>
 
-          {/* Mega Menu Dropdown */}
-          {activeMenu === item.label && item.children && (
-            <div className="absolute top-full left-0 w-[600px] bg-[#F5F5F0] border border-[#E5E5E0] shadow-sm p-8 grid grid-cols-3 gap-8 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-              {item.children.map((subItem) => (
-                <div key={subItem.label} className="space-y-4">
-                  <Link 
-                    href={subItem.href}
-                    className="block text-sm font-medium text-[#1A1A1A] hover:opacity-70 uppercase tracking-wide border-b border-[#E5E5E0] pb-2 mb-2"
-                  >
-                    {subItem.label}
-                  </Link>
-                  {subItem.children && (
-                    <ul className="space-y-2">
-                      {subItem.children.map((child) => (
-                        <li key={child.label}>
-                          <Link 
-                            href={child.href}
-                            className="text-sm text-[#666] hover:text-[#1A1A1A] transition-colors block py-1"
-                          >
-                            {child.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      ))}
+            {/* Mega Menu Dropdown */}
+            {activeMenu === item.label && item.children && (
+              <div className={`absolute top-full ${isLastTwo ? 'right-0' : 'left-0'} w-[600px] bg-[#F5F5F0] border border-[#E5E5E0] shadow-sm p-8 grid grid-cols-3 gap-8 z-50 animate-in fade-in slide-in-from-top-2 duration-200`}>
+                {item.children.map((subItem) => (
+                  <div key={subItem.label} className="space-y-4">
+                    <Link 
+                      href={subItem.href}
+                      className="block text-sm font-medium text-[#1A1A1A] hover:opacity-70 uppercase tracking-wide border-b border-[#E5E5E0] pb-2 mb-2"
+                    >
+                      {subItem.label}
+                    </Link>
+                    {subItem.children && (
+                      <ul className="space-y-2">
+                        {subItem.children.map((child) => (
+                          <li key={child.label}>
+                            <Link 
+                              href={child.href}
+                              className="text-sm text-[#666] hover:text-[#1A1A1A] transition-colors block py-1"
+                            >
+                              {child.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        );
+      })}
     </nav>
   );
 }
@@ -498,59 +529,45 @@ function MegaMenu() {
 // --- END EMBEDDED MEGAMENU ---
 
 // 1. Find all the pages in the folder
-const pages = import.meta.glob('./pages/**/*.tsx');
+const pages = import.meta.glob("./pages/**/*.tsx", { eager: true });
 
-// 2. Build a list of valid routes based on the actual files
-const generatedRoutes = Object.keys(pages).map((filePath) => {
-  // Convert "./pages/wardrobe/outerwear/index.tsx" -> "/wardrobe/outerwear"
-  // Convert "./pages/about/methodology.tsx" -> "/about/methodology"
-  let routePath = filePath
-    .replace('./pages', '')
-    .replace('/index.tsx', '')
-    .replace('.tsx', '');
-    
-  return {
-    path: routePath,
-    // Create a lazy-loading component for this page
-    component: React.lazy(() => pages[filePath]() as any)
-  };
-});
+// 2. Build a list of routes
+const routes: { path: string; component: React.ComponentType }[] = [];
+for (const path in pages) {
+  const module = pages[path] as { default: React.ComponentType };
+  let routePath = path
+    .replace(/\.\/pages/, "")
+    .replace(/\.tsx$/, "")
+    .replace(/\/index$/, "");
+
+  if (routePath === "") routePath = "/";
+
+  routes.push({ path: routePath, component: module.default });
+}
 
 function Router() {
   return (
-    <Switch>
-      {/* Hardcoded Main Routes */}
-      <Route path="/" component={Home} />
-      <Route path="/comparison/:slug" component={ComparisonPage} />
-      <Route path="/hub/:category" component={HubPage} /> 
-      <Route path="/comparisons" component={Home} />
-      <Route path="/articles/:slug" component={ArticlePage} />
-
-      {/* Generated Routes from the File System */}
-      {generatedRoutes.map(({ path, component: Component }) => (
-        <Route key={path} path={path}>
-          <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-[#666] uppercase tracking-widest text-xs">Loading...</div>}>
-            <Component />
-          </Suspense>
-        </Route>
-      ))}
-
-      {/* 404 Catch-All */}
-      <Route component={NotFound} />
-    </Switch>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Switch>
+        {routes.map(({ path, component: Component }) => (
+          <Route key={path} path={path} component={Component} />
+        ))}
+        <Route path="/articles/:slug" component={ArticlePage} />
+        <Route component={NotFound} />
+      </Switch>
+    </Suspense>
   );
 }
 
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="light">
+      <ThemeProvider>
         <TooltipProvider>
-          <Toaster />
-          <div className="min-h-screen bg-[#F5F5F0] text-[#1A1A1A] font-sans selection:bg-[#E5E5E0]">
+          <div className="min-h-screen bg-[#F5F5F0]">
             <nav className="sticky top-0 z-50 bg-[#F5F5F0]/90 backdrop-blur-md border-b border-[#E5E5E0]">
               <div className="max-w-[1800px] mx-auto px-6 h-16 flex items-center justify-between">
-                <Link href="/" className="text-xl font-medium tracking-tight hover:opacity-70 transition-opacity mr-12">
+                <Link href="/" className="text-xl font-medium tracking-tight hover:opacity-70 transition-opacity mr-12 whitespace-nowrap">
                   ELEGANT EMPIIRE
                 </Link>
                 <MegaMenu />
