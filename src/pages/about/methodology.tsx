@@ -21,12 +21,16 @@ export default function EditorialStandards() {
             <li>Our experts are anonymous to prevent conflicts of interest and ensure their analysis is unbiased.</li>
           </ul>
 
-          <h2 className="text-3xl font-serif mt-12 mb-4">2. Rigorous Testing Methodology</h2>
-          <ul className="space-y-2 text-gray-700">
-            <li>We buy our own products at retail. We do not accept freebies or press samples.</li>
-            <li>Every product is subjected to a standardized wear-testing protocol, which includes a minimum of 50 hours of real-world use.</li>
-            <li>Garments are deconstructed to analyze internal construction, stitching, and material quality.</li>
-          </ul>
+          <h2 className="text-3xl font-serif mt-12 mb-4">2. Rigorous Evaluation Standards</h2>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Elegant Empiire applies a consistent evaluation framework across all reviews and guides. Products are assessed through a combination of hands-on wear experience, material analysis, and construction review informed by industry best practices.
+          </p>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Where applicable, items are evaluated through extended real-world use to assess comfort, durability, and performance over time. Garments and accessories are examined for internal construction details, stitching quality, finishing, and material integrity using non-destructive inspection methods standard within luxury retail and atelier environments.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            We do not accept sponsored rankings or editorial influence tied to commercial relationships. Our assessments prioritize fiber quality, construction methodology, longevity, and cost-per-wear value rather than trend relevance or marketing narratives.
+          </p>
 
           <h2 className="text-3xl font-serif mt-12 mb-4">3. Data-Driven Analysis</h2>
           <ul className="space-y-2 text-gray-700">
