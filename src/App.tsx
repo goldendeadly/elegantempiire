@@ -1,4 +1,3 @@
-import "./App.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Link, Route, Switch } from "wouter";
