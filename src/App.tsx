@@ -178,9 +178,7 @@ const menuStructure: MenuItem[] = [
         children: [
           { label: 'How to Choose a Signature Scente', href: '/fragrance/guides/how-to-choose-a-signature-scent' },
           { label: 'Niche vs Designer Fragrance', href: '/fragrance/guides/niche-vs-designer-fragrance' },
-          { label: 'Investment Fragrances', href: '/fragrance/guides/investment-fragrances' },
           { label: 'Fragrance for Travel, Office, Evening', href: '/fragrance/guides/fragrance-for-travel-office-evening' },
-          { label: 'Investment Fragrances', href: '/fragrance/guides/investment-fragrances' },
         ]
       },
       {
@@ -208,7 +206,6 @@ const menuStructure: MenuItem[] = [
         children: [
           { label: 'Creed', href: '/fragrance/spotlight/creed' },
           { label: 'Maison Francis Kurkdjian', href: '/fragrance/spotlight/maison-francis-kurkdjian' },
-          { label: 'Roja', href: '/fragrance/spotlight/roja' },
         ]
       },
       {
@@ -228,15 +225,6 @@ const menuStructure: MenuItem[] = [
           { label: 'Brand vs Brand', href: '/fragrance/comparisons/brand-vs-brand' },
           { label: 'Scent vs Scent', href: '/fragrance/comparisons/scent-vs-scent' },
           { label: 'Niche vs Designer', href: '/fragrance/comparisons/niche-vs-designer' },
-          { label: 'Roja', href: '/fragrance/comparisons/roja' },
-        ]
-      },
-      {
-        label: 'Comparisons',
-        href: '/fragrance/comparisons',
-        children: [
-          { label: 'Brand vs Brand', href: '/fragrance/comparisons/brand-vs-brand' },
-          { label: 'Scent vs Scent', href: '/fragrance/comparisons/scent-vs-scent' },
         ]
       },
       {
