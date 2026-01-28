@@ -224,9 +224,11 @@ const pages = import.meta.glob('./pages/**/*.tsx');
 // 2. Build a list of valid routes based on the actual files
 const generatedRoutes = Object.keys(pages).map((filePath) => {
   // Convert "./pages/wardrobe/outerwear/index.tsx" -> "/wardrobe/outerwear"
+  // Convert "./pages/about/methodology.tsx" -> "/about/methodology"
   let routePath = filePath
     .replace('./pages', '')
-    .replace('/index.tsx', '');
+    .replace('/index.tsx', '')
+    .replace('.tsx', '');
     
   return {
     path: routePath,
