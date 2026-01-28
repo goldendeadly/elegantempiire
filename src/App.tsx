@@ -491,9 +491,6 @@ const menuStructure: MenuItem[] = [
     ]
   },
 ];
-    ]
-  }
-];
 
 function MegaMenu() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
