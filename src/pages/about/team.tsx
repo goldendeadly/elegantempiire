@@ -11,46 +11,28 @@ export default function OurExperts() {
         <h1 className="text-5xl font-serif mb-6">Our Experts</h1>
         
         <div className="prose prose-lg max-w-none">
-          <p className="text-xl text-gray-700 mb-12">
-            Elegant Empiire is built by a team of industry insiders, textile scientists, and master tailors who have dedicated their careers to understanding the world of luxury menswear.
+          <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+            Elegant Empiire operates as a collective, not a personality-driven publication. Our contributors have worked behind the scenes at heritage mills, luxury retailers, ateliers, and brand advisory desks.
           </p>
 
-          <div className="space-y-12">
-            <div>
-              <h2 className="text-3xl font-serif mb-2">Julian Ashford</h2>
-              <p className="text-sm text-gray-500 mb-4">Former Luxury Buyer & Editorial Lead</p>
-              <p className="text-gray-700">
-                Julian spent 15 years as a senior buyer for one of Europe's most prestigious department stores, where he was responsible for curating collections from Loro Piana, Brunello Cucinelli, and The Row. He now leads our editorial team, bringing an insider's perspective on what separates the truly exceptional from the merely expensive.
-              </p>
-            </div>
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            Environments where discretion is not optional, but required. Anonymity allows us to speak candidly about construction quality, material sourcing, pricing integrity, and long-term value without compromising professional obligations or industry relationships.
+          </p>
 
-            <div>
-              <h2 className="text-3xl font-serif mb-2">Dr. Alistair Finch</h2>
-              <p className="text-sm text-gray-500 mb-4">Textile Scientist & Materials Analyst</p>
-              <p className="text-gray-700">
-                With a PhD in textile engineering and 20 years of experience in luxury fabric mills, Dr. Finch is our authority on material quality. He conducts all of our fiber analysis, stitch density testing, and durability assessments. If a brand claims "Italian cashmere," Alistair will tell you exactly which mill it came from—and whether it's worth the price.
-              </p>
-            </div>
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            Our experts remain anonymous to preserve their independence and ensure their analysis is free from external pressure. What you read on Elegant Empiire is the unfiltered truth.
+          </p>
 
-            <div>
-              <h2 className="text-3xl font-serif mb-2">Matteo D'Angelo</h2>
-              <p className="text-sm text-gray-500 mb-4">Master Tailor & Construction Expert</p>
-              <p className="text-gray-700">
-                Matteo trained on Savile Row and spent a decade working for one of Milan's most exclusive tailoring houses. He is responsible for deconstructing every garment we review, analyzing internal construction, canvas work, and finishing details that most consumers never see. His eye for craftsmanship is unmatched.
-              </p>
-            </div>
+          <hr className="my-12 border-gray-300" />
 
-            <div>
-              <h2 className="text-3xl font-serif mb-2">Elias Vance</h2>
-              <p className="text-sm text-gray-500 mb-4">Investigative Journalist & Brand Analyst</p>
-              <p className="text-gray-700">
-                Elias has spent his career exposing the truth behind luxury marketing. He investigates supply chains, tracks ownership changes, and monitors brand quality shifts that often go unnoticed by the public. If a heritage brand has been quietly cutting corners, Elias will find out—and we'll tell you.
-              </p>
-            </div>
-          </div>
+          <h2 className="text-3xl font-serif mb-6">Our Standards</h2>
 
-          <p className="text-lg text-gray-700 mt-12">
-            Our experts remain anonymous to preserve their industry relationships and ensure their analysis is free from external pressure. What you read on Elegant Empiire is the unfiltered truth.
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            Every review, guide, and comparison published on Elegant Empiire follows a standardized evaluation framework grounded in textile science, craftsmanship analysis, and real-world wear testing. We do not accept paid placements, sponsored rankings, or editorial influence tied to commercial relationships. Products are assessed on fiber quality, construction method, durability, and cost-per-wear logic, not on trend relevance or brand prestige alone.
+          </p>
+
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Elegant Empiire exists for readers who value discernment over novelty and precision over hype. We believe in higher standards, fewer recommendations, and purchases that stand the test of time.
           </p>
         </div>
       </div>
