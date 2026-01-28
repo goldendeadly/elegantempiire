@@ -25,13 +25,21 @@ const menuStructure: MenuItem[] = [
     href: '/wardrobe',
     children: [
       {
-        label: 'Outerwear',
-        href: '/wardrobe/outerwear',
+        label: 'Suiting & Tailoring',
+        href: '/wardrobe/suiting',
         children: [
-          { label: 'Coats', href: '/wardrobe/outerwear/coats' },
-          { label: 'Jackets', href: '/wardrobe/outerwear/jackets' },
-          { label: 'Trench Coats', href: '/wardrobe/outerwear/trench-coats' },
-          { label: 'Leather', href: '/wardrobe/outerwear/leather' },
+          { label: 'Suits', href: '/wardrobe/suiting/suits' },
+          { label: 'Blazers', href: '/wardrobe/suiting/blazers' },
+          { label: 'Trousers', href: '/wardrobe/suiting/trousers' },
+        ]
+      },
+      {
+        label: 'Shirts',
+        href: '/wardrobe/shirts',
+        children: [
+          { label: 'Dress Shirts', href: '/wardrobe/shirts/dress-shirts' },
+          { label: 'Casual Shirts', href: '/wardrobe/shirts/casual-shirts' },
+          { label: 'Polos', href: '/wardrobe/shirts/polos' },
         ]
       },
       {
@@ -44,12 +52,59 @@ const menuStructure: MenuItem[] = [
         ]
       },
       {
-        label: 'Suiting',
-        href: '/wardrobe/suiting',
+        label: 'Outerwear',
+        href: '/wardrobe/outerwear',
         children: [
-          { label: 'Suits', href: '/wardrobe/suiting/suits' },
-          { label: 'Blazers', href: '/wardrobe/suiting/blazers' },
-          { label: 'Trousers', href: '/wardrobe/suiting/trousers' },
+          { label: 'Coats', href: '/wardrobe/outerwear/coats' },
+          { label: 'Jackets', href: '/wardrobe/outerwear/jackets' },
+          { label: 'Trench Coats', href: '/wardrobe/outerwear/trench-coats' },
+          { label: 'Leather', href: '/wardrobe/outerwear/leather' },
+        ]
+      },
+      {
+        label: 'Denim',
+        href: '/wardrobe/denim',
+        children: [
+          { label: 'Raw Denim', href: '/wardrobe/denim/raw-denim' },
+          { label: 'Selvedge', href: '/wardrobe/denim/selvedge' },
+          { label: 'Slim', href: '/wardrobe/denim/slim' },
+          { label: 'Straight', href: '/wardrobe/denim/straight' },
+        ]
+      },
+      {
+        label: 'T-Shirts & Basics',
+        href: '/wardrobe/basics',
+        children: [
+          { label: 'Premium Tees', href: '/wardrobe/basics/premium-tees' },
+          { label: 'Henleys', href: '/wardrobe/basics/henleys' },
+          { label: 'Underwear', href: '/wardrobe/basics/underwear' },
+        ]
+      },
+      {
+        label: 'Loungewear',
+        href: '/wardrobe/loungewear',
+        children: [
+          { label: 'Robes', href: '/wardrobe/loungewear/robes' },
+          { label: 'Pajamas', href: '/wardrobe/loungewear/pajamas' },
+          { label: 'Luxury Sweats', href: '/wardrobe/loungewear/luxury-sweats' },
+        ]
+      },
+      {
+        label: 'Activewear',
+        href: '/wardrobe/activewear',
+        children: [
+          { label: 'Performance', href: '/wardrobe/activewear/performance' },
+          { label: 'Technical Gear', href: '/wardrobe/activewear/technical-gear' },
+        ]
+      },
+      {
+        label: 'Neckwear & Formal',
+        href: '/wardrobe/neckwear',
+        children: [
+          { label: 'Ties', href: '/wardrobe/neckwear/ties' },
+          { label: 'Bow Ties', href: '/wardrobe/neckwear/bow-ties' },
+          { label: 'Pocket Squares', href: '/wardrobe/neckwear/pocket-squares' },
+          { label: 'Formal Accessories', href: '/wardrobe/neckwear/formal-accessories' },
         ]
       },
     ]
@@ -62,8 +117,9 @@ const menuStructure: MenuItem[] = [
         label: 'Boots',
         href: '/footwear/boots',
         children: [
-          { label: 'Chelsea Boots', href: '/footwear/boots/chelsea-boots' },
-          { label: 'Combat Boots', href: '/footwear/boots/combat-boots' },
+          { label: 'Chelsea', href: '/footwear/boots/chelsea' },
+          { label: 'Combat', href: '/footwear/boots/combat' },
+          { label: 'Chukka', href: '/footwear/boots/chukka' },
         ]
       },
       {
@@ -71,7 +127,8 @@ const menuStructure: MenuItem[] = [
         href: '/footwear/sneakers',
         children: [
           { label: 'Minimalist', href: '/footwear/sneakers/minimalist' },
-          { label: 'Retro Runners', href: '/footwear/sneakers/retro-runners' },
+          { label: 'Retro', href: '/footwear/sneakers/retro' },
+          { label: 'Luxury Runners', href: '/footwear/sneakers/luxury-runners' },
         ]
       },
       {
@@ -80,37 +137,139 @@ const menuStructure: MenuItem[] = [
         children: [
           { label: 'Loafers', href: '/footwear/shoes/loafers' },
           { label: 'Derbies', href: '/footwear/shoes/derbies' },
+          { label: 'Oxfords', href: '/footwear/shoes/oxfords' },
+        ]
+      },
+      {
+        label: 'Shoe Care & Accessories',
+        href: '/footwear/care',
+        children: [
+          { label: 'Polishes', href: '/footwear/care/polishes' },
+          { label: 'Trees', href: '/footwear/care/trees' },
+          { label: 'Horns', href: '/footwear/care/horns' },
+          { label: 'Laces', href: '/footwear/care/laces' },
         ]
       },
     ]
   },
   {
-    label: 'Travel',
-    href: '/travel',
+    label: 'Accessories',
+    href: '/accessories',
     children: [
       {
-        label: 'Europe',
-        href: '/travel/europe',
+        label: 'Watches',
+        href: '/accessories/watches',
         children: [
-          { label: 'Italy', href: '/travel/europe/italy' },
-          { label: 'France', href: '/travel/europe/france' },
-          { label: 'UK', href: '/travel/europe/uk' },
+          { label: 'Dress', href: '/accessories/watches/dress' },
+          { label: 'Dive', href: '/accessories/watches/dive' },
+          { label: 'Chronographs', href: '/accessories/watches/chronographs' },
+          { label: 'Vintage', href: '/accessories/watches/vintage' },
+          { label: 'Investment', href: '/accessories/watches/investment' },
         ]
       },
       {
-        label: 'Asia',
-        href: '/travel/asia',
+        label: 'Eyewear',
+        href: '/accessories/eyewear',
         children: [
-          { label: 'Japan', href: '/travel/asia/japan' },
-          { label: 'South Korea', href: '/travel/asia/south-korea' },
+          { label: 'Sunglasses', href: '/accessories/eyewear/sunglasses' },
+          { label: 'Optical', href: '/accessories/eyewear/optical' },
         ]
       },
       {
-        label: 'Americas',
-        href: '/travel/americas',
+        label: 'Jewelry',
+        href: '/accessories/jewelry',
         children: [
-          { label: 'USA', href: '/travel/americas/usa' },
-          { label: 'Canada', href: '/travel/americas/canada' },
+          { label: 'Rings', href: '/accessories/jewelry/rings' },
+          { label: 'Bracelets', href: '/accessories/jewelry/bracelets' },
+          { label: 'Necklaces', href: '/accessories/jewelry/necklaces' },
+          { label: 'Cufflinks', href: '/accessories/jewelry/cufflinks' },
+        ]
+      },
+      {
+        label: 'Bags',
+        href: '/accessories/bags',
+        children: [
+          { label: 'Weekenders', href: '/accessories/bags/weekenders' },
+          { label: 'Briefcases', href: '/accessories/bags/briefcases' },
+          { label: 'Totes', href: '/accessories/bags/totes' },
+        ]
+      },
+      {
+        label: 'Small Leather Goods',
+        href: '/accessories/leather-goods',
+        children: [
+          { label: 'Wallets', href: '/accessories/leather-goods/wallets' },
+          { label: 'Card Holders', href: '/accessories/leather-goods/card-holders' },
+          { label: 'Folios', href: '/accessories/leather-goods/folios' },
+        ]
+      },
+      {
+        label: 'Hats',
+        href: '/accessories/hats',
+        children: [
+          { label: 'Fedoras', href: '/accessories/hats/fedoras' },
+          { label: 'Beanies', href: '/accessories/hats/beanies' },
+          { label: 'Caps', href: '/accessories/hats/caps' },
+        ]
+      },
+      {
+        label: 'Scarves & Gloves',
+        href: '/accessories/scarves-gloves',
+        children: [
+          { label: 'Cashmere Scarves', href: '/accessories/scarves-gloves/cashmere-scarves' },
+          { label: 'Leather Gloves', href: '/accessories/scarves-gloves/leather-gloves' },
+        ]
+      },
+    ]
+  },
+  {
+    label: 'Grooming & Fragrance',
+    href: '/grooming',
+    children: [
+      {
+        label: 'Fragrance',
+        href: '/grooming/fragrance',
+        children: [
+          { label: 'Niche', href: '/grooming/fragrance/niche' },
+          { label: 'Designer', href: '/grooming/fragrance/designer' },
+          { label: 'Oud', href: '/grooming/fragrance/oud' },
+          { label: 'Fresh', href: '/grooming/fragrance/fresh' },
+        ]
+      },
+      {
+        label: 'Shaving',
+        href: '/grooming/shaving',
+        children: [
+          { label: 'Razors', href: '/grooming/shaving/razors' },
+          { label: 'Creams', href: '/grooming/shaving/creams' },
+          { label: 'Aftershave', href: '/grooming/shaving/aftershave' },
+        ]
+      },
+      {
+        label: 'Skincare',
+        href: '/grooming/skincare',
+        children: [
+          { label: 'Cleansers', href: '/grooming/skincare/cleansers' },
+          { label: 'Moisturizers', href: '/grooming/skincare/moisturizers' },
+          { label: 'Serums', href: '/grooming/skincare/serums' },
+        ]
+      },
+      {
+        label: 'Haircare',
+        href: '/grooming/haircare',
+        children: [
+          { label: 'Styling', href: '/grooming/haircare/styling' },
+          { label: 'Shampoo', href: '/grooming/haircare/shampoo' },
+          { label: 'Conditioners', href: '/grooming/haircare/conditioners' },
+        ]
+      },
+      {
+        label: 'Body',
+        href: '/grooming/body',
+        children: [
+          { label: 'Soaps', href: '/grooming/body/soaps' },
+          { label: 'Lotions', href: '/grooming/body/lotions' },
+          { label: 'Deodorant', href: '/grooming/body/deodorant' },
         ]
       },
     ]
@@ -125,14 +284,98 @@ const menuStructure: MenuItem[] = [
         children: [
           { label: 'Furniture', href: '/lifestyle/home/furniture' },
           { label: 'Lighting', href: '/lifestyle/home/lighting' },
+          { label: 'Decor', href: '/lifestyle/home/decor' },
         ]
       },
       {
-        label: 'Grooming',
-        href: '/lifestyle/grooming',
+        label: 'Bar & Spirits',
+        href: '/lifestyle/bar-spirits',
         children: [
-          { label: 'Skincare', href: '/lifestyle/grooming/skincare' },
-          { label: 'Fragrance', href: '/lifestyle/grooming/fragrance' },
+          { label: 'Glassware', href: '/lifestyle/bar-spirits/glassware' },
+          { label: 'Rare Spirits', href: '/lifestyle/bar-spirits/rare-spirits' },
+          { label: 'Bar Tools', href: '/lifestyle/bar-spirits/bar-tools' },
+        ]
+      },
+      {
+        label: 'Cigars & Tobacco',
+        href: '/lifestyle/cigars',
+        children: [
+          { label: 'Humidors', href: '/lifestyle/cigars/humidors' },
+          { label: 'Accessories', href: '/lifestyle/cigars/accessories' },
+          { label: 'Guides', href: '/lifestyle/cigars/guides' },
+        ]
+      },
+      {
+        label: 'Tech',
+        href: '/lifestyle/tech',
+        children: [
+          { label: 'Audio', href: '/lifestyle/tech/audio' },
+          { label: 'Minimalist Gadgets', href: '/lifestyle/tech/minimalist-gadgets' },
+        ]
+      },
+      {
+        label: 'Office & Study',
+        href: '/lifestyle/office',
+        children: [
+          { label: 'Stationery', href: '/lifestyle/office/stationery' },
+          { label: 'Desk Accessories', href: '/lifestyle/office/desk-accessories' },
+        ]
+      },
+      {
+        label: 'Books & Culture',
+        href: '/lifestyle/books',
+        children: [
+          { label: 'Business', href: '/lifestyle/books/business' },
+          { label: 'Mindset', href: '/lifestyle/books/mindset' },
+        ]
+      },
+    ]
+  },
+  {
+    label: 'Travel',
+    href: '/travel',
+    children: [
+      {
+        label: 'Luggage & Packing',
+        href: '/travel/luggage',
+        children: [
+          { label: 'Carry-ons', href: '/travel/luggage/carry-ons' },
+          { label: 'Checked', href: '/travel/luggage/checked' },
+          { label: 'Organizers', href: '/travel/luggage/organizers' },
+        ]
+      },
+      {
+        label: 'Hotels & Resorts',
+        href: '/travel/hotels',
+        children: [
+          { label: 'Boutique', href: '/travel/hotels/boutique' },
+          { label: 'Luxury', href: '/travel/hotels/luxury' },
+          { label: 'Reviews', href: '/travel/hotels/reviews' },
+        ]
+      },
+      {
+        label: 'Airlines & Lounges',
+        href: '/travel/airlines',
+        children: [
+          { label: 'First Class', href: '/travel/airlines/first-class' },
+          { label: 'Private Jets', href: '/travel/airlines/private-jets' },
+          { label: 'Lounge Guides', href: '/travel/airlines/lounge-guides' },
+        ]
+      },
+      {
+        label: 'Private Travel',
+        href: '/travel/private',
+        children: [
+          { label: 'Charters', href: '/travel/private/charters' },
+          { label: 'Concierge Services', href: '/travel/private/concierge-services' },
+        ]
+      },
+      {
+        label: 'Travel Finance',
+        href: '/travel/finance',
+        children: [
+          { label: 'Insurance', href: '/travel/finance/insurance' },
+          { label: 'Premium Cards', href: '/travel/finance/premium-cards' },
         ]
       },
     ]
@@ -142,19 +385,55 @@ const menuStructure: MenuItem[] = [
     href: '/brands',
     children: [
       {
-        label: 'Spotlight',
-        href: '/brands/spotlight',
+        label: 'Brand Spotlights A–Z',
+        href: '/brands/a-z',
         children: [
-          { label: 'The Row', href: '/brands/spotlight/the-row' },
-          { label: 'Lemaire', href: '/brands/spotlight/lemaire' },
+          { label: 'Full Directory', href: '/brands/a-z' },
         ]
       },
       {
-        label: 'A-Z',
-        href: '/brands/a-z',
+        label: 'Heritage Houses',
+        href: '/brands/heritage',
         children: [
-          { label: 'A', href: '/brands/a-z/a' },
-          { label: 'B', href: '/brands/a-z/b' },
+          { label: 'Loro Piana', href: '/brands/heritage/loro-piana' },
+          { label: 'Zegna', href: '/brands/heritage/zegna' },
+          { label: 'Hermès', href: '/brands/heritage/hermes' },
+        ]
+      },
+      {
+        label: 'Modern Luxury',
+        href: '/brands/modern',
+        children: [
+          { label: 'The Row', href: '/brands/modern/the-row' },
+          { label: 'Lemaire', href: '/brands/modern/lemaire' },
+          { label: 'Fear of God', href: '/brands/modern/fear-of-god' },
+        ]
+      },
+    ]
+  },
+  {
+    label: 'Guides & Comparisons',
+    href: '/guides',
+    children: [
+      {
+        label: 'Best Of Guides',
+        href: '/guides/best-of',
+        children: [
+          { label: 'Curated Lists', href: '/guides/best-of' },
+        ]
+      },
+      {
+        label: 'Brand vs Brand',
+        href: '/guides/comparisons',
+        children: [
+          { label: 'Head-to-Head Analysis', href: '/guides/comparisons' },
+        ]
+      },
+      {
+        label: 'Buying Guides',
+        href: '/guides/buying',
+        children: [
+          { label: 'Investment Frameworks', href: '/guides/buying' },
         ]
       },
     ]
