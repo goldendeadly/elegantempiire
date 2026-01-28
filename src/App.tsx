@@ -149,6 +149,23 @@ const menuStructure: MenuItem[] = [
           { label: 'Laces', href: '/footwear/care/laces' },
         ]
       },
+      {
+        label: 'Warm-Weather & Casual',
+        href: '/footwear/warm-weather',
+        children: [
+          { label: 'Slip-Ons', href: '/footwear/warm-weather/slip-ons' },
+          { label: 'Sandals', href: '/footwear/warm-weather/sandals' },
+          { label: 'Espadrilles', href: '/footwear/warm-weather/espadrilles' },
+        ]
+      },
+      {
+        label: 'At-Home & Leisure',
+        href: '/footwear/at-home',
+        children: [
+          { label: 'Slippers', href: '/footwear/at-home/slippers' },
+          { label: 'Driving Shoes', href: '/footwear/at-home/driving-shoes' },
+        ]
+      },
     ]
   },
   {
