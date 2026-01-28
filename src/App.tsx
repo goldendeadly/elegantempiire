@@ -406,6 +406,7 @@ const menuStructure: MenuItem[] = [
         children: [
           { label: 'Business', href: '/lifestyle/books/business' },
           { label: 'Mindset', href: '/lifestyle/books/mindset' },
+           { label: 'Philosophy & Thought', href: '/lifestyle/books/philosophy & thought' },
         ]
       },
     ]
