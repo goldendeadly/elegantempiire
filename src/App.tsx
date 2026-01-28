@@ -492,21 +492,25 @@ const menuStructure: MenuItem[] = [
     ]
   },
   {
-    label: 'Guides & Comparisons',
+    label: 'Guides & Analysis',
     href: '/guides',
     children: [
       {
         label: 'Best Of Guides',
         href: '/guides/best-of',
         children: [
-          { label: 'Curated Lists', href: '/guides/best-of' },
+          { label: 'Best in Class', href: '/guides/best in class' },
+          { label: 'Curated Lists', href: '/guides/curated lists' },
+           { label: 'Editor’s Picks', href: '/guides/editor’s picks' },
         ]
       },
       {
         label: 'Brand vs Brand',
-        href: '/guides/comparisons',
+        href: '/guides/analysis',
         children: [
-          { label: 'Head-to-Head Analysis', href: '/guides/comparisons' },
+          { label: 'Head-to-Head Analysis', href: '/guides/analysis' },
+          { label: 'Heritage vs Modern', href: '/guides/heritage vs modern' },
+          { label: 'Entry vs Flagship', href: '/guides/entry vs flagship' },
         ]
       },
       {
@@ -516,6 +520,14 @@ const menuStructure: MenuItem[] = [
           { label: 'Investment Frameworks', href: '/guides/buying' },
         ]
       },
+      {
+        label: 'Investment Guides',
+        href: '/guides/investment',
+        children: [
+          { label: 'Investment-Grade Cashmere', href: '/guides/investment-grade cashmere' },
+          { label: 'Investment-Grade Leather', href: '/guides/investment-grade leather' },
+          { label: 'Investment-Grade Watches', href: '/guides/investment-grade watches' },
+        ]
     ]
   }
 ];
