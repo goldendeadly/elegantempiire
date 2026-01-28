@@ -35,7 +35,7 @@ export default function Home() {
   const bestOfGuides = [
     { title: "Best Cashmere Sweaters", href: "/wardrobe/knitwear/cashmere", tag: "Editor's Pick" },
     { title: "Best Luxury Watches Under $5K", href: "/accessories/watches", tag: "Value" },
-    { title: "Best Niche Fragrances", href: "/lifestyle/grooming/fragrance", tag: "High Commission" },
+    { title: "Best Niche Fragrances", href: "/lifestyle/grooming/fragrance", tag: "High Value" },
     { title: "Best Italian Suits", href: "/wardrobe/suiting/suits", tag: "Investment" },
     { title: "Best Leather Bags", href: "/accessories/bags", tag: "Trending" },
     { title: "Best Sunglasses", href: "/accessories/eyewear/sunglasses", tag: "Summer" },
