@@ -360,14 +360,15 @@ const menuStructure: MenuItem[] = [
           { label: 'Furniture', href: '/lifestyle/home/furniture' },
           { label: 'Lighting', href: '/lifestyle/home/lighting' },
           { label: 'Decor', href: '/lifestyle/home/decor' },
+          { label: 'Textiles', href: '/lifestyle/home/textiles' },
         ]
       },
       {
         label: 'Bar & Spirits',
         href: '/lifestyle/bar-spirits',
         children: [
-          { label: 'Glassware', href: '/lifestyle/bar-spirits/glassware' },
           { label: 'Rare Spirits', href: '/lifestyle/bar-spirits/rare-spirits' },
+          { label: 'Glassware', href: '/lifestyle/bar-spirits/glassware' },
           { label: 'Bar Tools', href: '/lifestyle/bar-spirits/bar-tools' },
         ]
       },
@@ -375,8 +376,9 @@ const menuStructure: MenuItem[] = [
         label: 'Cigars & Tobacco',
         href: '/lifestyle/cigars',
         children: [
+           { label: 'Cigars', href: '/lifestyle/cigars/cigars' },
           { label: 'Humidors', href: '/lifestyle/cigars/humidors' },
-          { label: 'Accessories', href: '/lifestyle/cigars/accessories' },
+          { label: 'Cigar & Tobacco Accessories', href: '/lifestyle/cigars/cigar & tobacco accessories' },
           { label: 'Guides', href: '/lifestyle/cigars/guides' },
         ]
       },
@@ -385,6 +387,7 @@ const menuStructure: MenuItem[] = [
         href: '/lifestyle/tech',
         children: [
           { label: 'Audio', href: '/lifestyle/tech/audio' },
+           { label: 'Wellness Tech', href: '/lifestyle/tech/wellness tech' },
           { label: 'Minimalist Gadgets', href: '/lifestyle/tech/minimalist-gadgets' },
         ]
       },
@@ -392,6 +395,7 @@ const menuStructure: MenuItem[] = [
         label: 'Office & Study',
         href: '/lifestyle/office',
         children: [
+          { label: 'Pens', href: '/lifestyle/office/pens' },
           { label: 'Stationery', href: '/lifestyle/office/stationery' },
           { label: 'Desk Accessories', href: '/lifestyle/office/desk-accessories' },
         ]
