@@ -200,14 +200,6 @@ const menuStructure: MenuItem[] = [
           { label: 'Dior', href: '/fragrance/designer/dior' },
         ]
       },
-       {
-        label: 'Brand Spotlights',
-        href: '/fragrance/spotlight',
-        children: [
-          { label: 'Creed', href: '/fragrance/spotlight/creed' },
-          { label: 'Maison Francis Kurkdjian', href: '/fragrance/spotlight/maison-francis-kurkdjian' },
-        ]
-      },
       {
         label: 'Fragrance Notes & Education',
         href: '/fragrance/education',
@@ -236,15 +228,6 @@ const menuStructure: MenuItem[] = [
           { label: 'Best Office Fragrances', href: '/fragrance/guides/best-office-fragrances' },
           { label: 'Best Evening Fragrances', href: '/fragrance/guides/best-evening-fragrances' },
           { label: 'Best Travel Fragrances', href: '/fragrance/guides/best-travel-fragrances' },
-        ]
-      },
-      {
-        label: 'Performance & Wear Testing',
-        href: '/fragrance/performance',
-        children: [
-          { label: 'Longevity Analysis', href: '/fragrance/performance/longevity-analysis' },
-          { label: 'Sillage & Projection', href: '/fragrance/performance/projection' },
-          { label: 'Real-World Wear Testing', href: '/fragrance/performance/testing' },
         ]
       },
     ]
