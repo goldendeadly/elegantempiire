@@ -12,7 +12,7 @@ tags:
 
 ## The Only Cashmere Guide You’ll Ever Need
 
-In the world of luxury menswear, few materials are as misunderstood as cashmere. It is a fabric synonymous with softness and expense, yet the chasm between a $200 department store sweater and a $2,000 piece from a heritage brand is vast. This guide is not about finding a bargain; it is about understanding **investment-grade cashmere**—a class of knitwear that, when chosen correctly, will last a lifetime and form the bedrock of a sophisticated wardrobe.
+In the world of luxury menswear, few materials are as misunderstood as cashmere. It is a fabric synonymous with softness and expense, yet the chasm between a $200 department store sweater and a $2,000 piece from a heritage brand is vast. This guide is not about finding a bargain; it is about understanding **investment-grade cashmere**, a class of knitwear that, when chosen correctly, will last a lifetime and form the bedrock of a sophisticated wardrobe.
 
 We will dissect the key markers of quality, from the windswept plateaus of Mongolia to the looms of Italian artisans, and review the top 7 brands that represent the pinnacle of the craft. This is your definitive guide to making a true investment in cashmere.
 
@@ -32,7 +32,7 @@ Before you can invest, you must speak the language. Three key metrics separate t
 
 ### 3. **Gauge: The Fineness of the Knit**
 - **Gauge** refers to the number of stitches per inch. A higher gauge (e.g., 18-gauge) results in a finer, lighter, and more delicate knit, ideal for dressier sweaters. A lower gauge (e.g., 7-gauge) produces a chunkier, heavier knit, perfect for casual, rugged pieces.
-- Neither is “better”—they serve different purposes. An investment wardrobe should have both.
+- Neither is “better”, they serve different purposes. An investment wardrobe should have both.
 
 ---
 
