@@ -178,9 +178,10 @@ const menuStructure: MenuItem[] = [
         label: 'Guides & Frameworks',
         href: '/fragrance/guides',
         children: [
-          { label: 'How to Choose a Signature Scente', href: '/fragrance/guides/how-to-choose-a-signature-scent' },
+          { label: 'Cologne Persona Grid', href: '/articles/cologne-persona-grid-signature-scents-men' },
+          { label: 'Day to Night Cologne Profiles', href: '/articles/day-to-night-cologne-dual-identity-profiles' },
+          { label: 'How to Choose a Signature Scent', href: '/fragrance/guides/how-to-choose-a-signature-scent' },
           { label: 'Niche vs Designer Fragrance', href: '/fragrance/guides/niche-vs-designer-fragrance' },
-          { label: 'Fragrance for Travel, Office, Evening', href: '/fragrance/guides/fragrance-for-travel-office-evening' },
         ]
       },
       {
