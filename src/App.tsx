@@ -1,4 +1,4 @@
-import { TooltipProvider } from "@/components/ui/tooltip";
+import Layout from "@/components/Layout";
 import NotFound from "@/pages/NotFound";
 import { Link, Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -152,76 +152,6 @@ const menuStructure: MenuItem[] = [
     ]
   },
   {
-    label: 'Accessories',
-    href: '/accessories',
-    children: [
-      {
-        label: 'Watches',
-        href: '/accessories/watches',
-        children: [
-          { label: 'Dress', href: '/accessories/watches/dress' },
-          { label: 'Dive', href: '/accessories/watches/dive' },
-          { label: 'Chronographs', href: '/accessories/watches/chronographs' },
-          { label: 'Vintage', href: '/accessories/watches/vintage' },
-          { label: 'Investment', href: '/accessories/watches/investment' },
-        ]
-      },
-      {
-        label: 'Eyewear',
-        href: '/accessories/eyewear',
-        children: [
-          { label: 'Sunglasses', href: '/accessories/eyewear/sunglasses' },
-          { label: 'Optical', href: '/accessories/eyewear/optical' },
-        ]
-      },
-      {
-        label: 'Jewelry',
-        href: '/accessories/jewelry',
-        children: [
-          { label: 'Rings', href: '/accessories/jewelry/rings' },
-          { label: 'Bracelets', href: '/accessories/jewelry/bracelets' },
-          { label: 'Necklaces', href: '/accessories/jewelry/necklaces' },
-          { label: 'Cufflinks', href: '/accessories/jewelry/cufflinks' },
-        ]
-      },
-      {
-        label: 'Bags',
-        href: '/accessories/bags',
-        children: [
-          { label: 'Weekenders', href: '/accessories/bags/weekenders' },
-          { label: 'Briefcases', href: '/accessories/bags/briefcases' },
-          { label: 'Totes', href: '/accessories/bags/totes' },
-        ]
-      },
-      {
-        label: 'Small Leather Goods',
-        href: '/accessories/leather-goods',
-        children: [
-          { label: 'Wallets', href: '/accessories/leather-goods/wallets' },
-          { label: 'Card Holders', href: '/accessories/leather-goods/card-holders' },
-          { label: 'Folios', href: '/accessories/leather-goods/folios' },
-        ]
-      },
-      {
-        label: 'Hats',
-        href: '/accessories/hats',
-        children: [
-          { label: 'Fedoras', href: '/accessories/hats/fedoras' },
-          { label: 'Beanies', href: '/accessories/hats/beanies' },
-          { label: 'Caps', href: '/accessories/hats/caps' },
-        ]
-      },
-      {
-        label: 'Scarves & Gloves',
-        href: '/accessories/scarves-gloves',
-        children: [
-          { label: 'Cashmere Scarves', href: '/accessories/scarves-gloves/cashmere-scarves' },
-          { label: 'Leather Gloves', href: '/accessories/scarves-gloves/leather-gloves' },
-        ]
-      },
-    ]
-  },
-  {
     label: 'Fragrance',
     href: '/fragrance',
     children: [
@@ -284,6 +214,103 @@ const menuStructure: MenuItem[] = [
         children: [
           { label: 'Performance Testing', href: '/fragrance/analysis/performance' },
           { label: 'Projection Guide', href: '/fragrance/analysis/projection' },
+        ]
+      },
+    ]
+  },
+  {
+    label: 'Watches',
+    href: '/watches',
+    children: [
+      {
+        label: 'By Style',
+        href: '/watches/style',
+        children: [
+          { label: 'Dress Watches', href: '/watches/style/dress' },
+          { label: 'Dive Watches', href: '/watches/style/dive' },
+          { label: 'Chronographs', href: '/watches/style/chronographs' },
+          { label: 'Sports Watches', href: '/watches/style/sports' },
+          { label: 'Complications', href: '/watches/style/complications' },
+        ]
+      },
+      {
+        label: 'By Intent',
+        href: '/watches/intent',
+        children: [
+          { label: 'Investment Watches', href: '/watches/intent/investment' },
+          { label: 'Vintage & Neo-Vintage', href: '/watches/intent/vintage' },
+          { label: 'Daily Wear vs Occasion', href: '/watches/intent/daily-vs-occasion' },
+          { label: 'Buying Guides', href: '/watches/intent/buying-guides' },
+        ]
+      },
+      {
+        label: 'Iconic Brands',
+        href: '/watches/brands',
+        children: [
+          { label: 'Rolex', href: '/watches/brands/rolex' },
+          { label: 'Cartier', href: '/watches/brands/cartier' },
+          { label: 'Audemars Piguet', href: '/watches/brands/audemars-piguet' },
+          { label: 'Patek Philippe', href: '/watches/brands/patek-philippe' },
+          { label: 'Richard Mille', href: '/watches/brands/richard-mille' },
+        ]
+      },
+    ]
+  },
+  {
+    label: 'Accessories',
+    href: '/accessories',
+    children: [
+      {
+        label: 'Eyewear',
+        href: '/accessories/eyewear',
+        children: [
+          { label: 'Sunglasses', href: '/accessories/eyewear/sunglasses' },
+          { label: 'Optical', href: '/accessories/eyewear/optical' },
+        ]
+      },
+      {
+        label: 'Jewelry',
+        href: '/accessories/jewelry',
+        children: [
+          { label: 'Rings', href: '/accessories/jewelry/rings' },
+          { label: 'Bracelets', href: '/accessories/jewelry/bracelets' },
+          { label: 'Necklaces', href: '/accessories/jewelry/necklaces' },
+          { label: 'Cufflinks', href: '/accessories/jewelry/cufflinks' },
+        ]
+      },
+      {
+        label: 'Bags',
+        href: '/accessories/bags',
+        children: [
+          { label: 'Weekenders', href: '/accessories/bags/weekenders' },
+          { label: 'Briefcases', href: '/accessories/bags/briefcases' },
+          { label: 'Totes', href: '/accessories/bags/totes' },
+        ]
+      },
+      {
+        label: 'Small Leather Goods',
+        href: '/accessories/leather-goods',
+        children: [
+          { label: 'Wallets', href: '/accessories/leather-goods/wallets' },
+          { label: 'Card Holders', href: '/accessories/leather-goods/card-holders' },
+          { label: 'Folios', href: '/accessories/leather-goods/folios' },
+        ]
+      },
+      {
+        label: 'Hats',
+        href: '/accessories/hats',
+        children: [
+          { label: 'Fedoras', href: '/accessories/hats/fedoras' },
+          { label: 'Beanies', href: '/accessories/hats/beanies' },
+          { label: 'Caps', href: '/accessories/hats/caps' },
+        ]
+      },
+      {
+        label: 'Scarves & Gloves',
+        href: '/accessories/scarves-gloves',
+        children: [
+          { label: 'Cashmere Scarves', href: '/accessories/scarves-gloves/cashmere-scarves' },
+          { label: 'Leather Gloves', href: '/accessories/scarves-gloves/leather-gloves' },
         ]
       },
     ]
@@ -449,18 +476,21 @@ const menuStructure: MenuItem[] = [
       },
       {
         label: 'Brand vs Brand',
-        href: '/guides/comparisons',
+        href: '/guides/brand-vs-brand',
         children: [
-          { label: 'Head-to-Head Analysis', href: '/guides/comparisons' },
+          { label: 'Head-to-head Analysis', href: '/guides/brand-vs-brand' },
         ]
       },
       {
         label: 'Buying Guides',
         href: '/guides/buying',
         children: [
-          { label: 'Investment Frameworks', href: '/guides/buying' },
+          { label: 'Investment Focus', href: '/guides/buying' },
         ]
       },
+    ]
+  },
+];
     ]
   }
 ];
