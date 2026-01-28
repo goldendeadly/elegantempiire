@@ -524,10 +524,11 @@ const menuStructure: MenuItem[] = [
         label: 'Investment Guides',
         href: '/guides/investment',
         children: [
-          { label: 'Investment-Grade Cashmere', href: '/guides/investment-grade cashmere' },
-          { label: 'Investment-Grade Leather', href: '/guides/investment-grade leather' },
-          { label: 'Investment-Grade Watches', href: '/guides/investment-grade watches' },
+          { label: 'Investment-Grade Cashmere', href: '/guides/investment-grade-cashmere' },
+          { label: 'Investment-Grade Leather', href: '/guides/investment-grade-leather' },
+          { label: 'Investment-Grade Watches', href: '/guides/investment-grade-watches' },
         ]
+      },
     ]
   }
 ];
