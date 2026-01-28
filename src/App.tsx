@@ -297,12 +297,15 @@ const menuStructure: MenuItem[] = [
         ]
       },
       {
-        label: 'Bags',
-        href: '/accessories/bags',
+        label: 'Travel & Carry',
+        href: '/accessories/travel & carry',
         children: [
-          { label: 'Weekenders', href: '/accessories/bags/weekenders' },
-          { label: 'Briefcases', href: '/accessories/bags/briefcases' },
-          { label: 'Totes', href: '/accessories/bags/totes' },
+          { label: 'Suitcases', href: '/accessories/Travel & Carry/suitcases' },
+          { label: 'Weekenders', href: '/accessories/Travel & Carry/weekenders' },
+          { label: 'Duffel Bags', href: '/accessories/Travel & Carry/duffel Bags' },
+          { label: 'Briefcases', href: '/accessories/Travel & Carry/driefcases' },
+          { label: 'Travel Sets', href: '/accessories/Travel & Carry/travel Sets' },
+          { label: 'Totes', href: '/accessories/Travel & Carry/totes' },
         ]
       },
       {
